@@ -8,3 +8,4 @@ $meta['toolbar_button']     = array('onoff');
 $meta['use_cstyle_nest']    = array('onoff');
 $meta['use_oneline_style']  = array('onoff');
 $meta['log_invalid_macro']  = array('onoff');
+$meta['striphtmlcomments']  = array('onoff');

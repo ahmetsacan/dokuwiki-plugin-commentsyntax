@@ -65,7 +65,7 @@ class syntax_plugin_commentsyntax_htmlcomment extends DokuWiki_Syntax_Plugin
     {
         if ($format == 'xhtml') {
             list($state, $comment) = $data;
-            if ($state == DOKU_LEXER_SPECIAL) {
+            if ($state == DOKU_LEXER_SPECIAL && !$this->getConf('striphtmlcomments')) {
                 $renderer->doc .= '<!--'.$comment.'-->';
             }
             return true;
